@@ -89,7 +89,7 @@ def _percentile(values: Iterable[float], pct: float) -> float:
 
 def _build_parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(description="Qwen-Image latency runner (Gaudi/HPU)")
-    p.add_argument("--model-id", default="Qwen/Qwen-Image")
+    p.add_argument("--model-id", default="/home/work/Qwen-Image")
     p.add_argument("--device", default="hpu")
     p.add_argument("--dtype", default="bf16", choices=("bf16", "fp16", "fp32"))
     p.add_argument("--mode", default="eager", choices=("eager", "compile", "hpu_graphs"))
