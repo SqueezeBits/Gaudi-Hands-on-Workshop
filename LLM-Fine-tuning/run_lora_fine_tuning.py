@@ -1,5 +1,5 @@
 # This file is adapted from:
-#   LLM-Adapters - https://github.com/huggingface/optimum-habana
+#   Optimum Habana - https://github.com/huggingface/optimum-habana
 #   Licensed under the Apache License, Version 2.0
 #
 #   Modifications made by Yeonjoon Jung, 2025
@@ -56,7 +56,7 @@ check_optimum_habana_min_version("1.19.0.dev0")
 @dataclass
 class FineTuneArguments:
     model_name_or_path: Optional[str] = field(
-        default=None,
+        default="/home/work/Qwen3-0.6B",
         metadata={"help": "The name or path to the model file."},
     )
     dataset_path: Optional[str] = field(
