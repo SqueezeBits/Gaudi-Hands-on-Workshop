@@ -56,7 +56,7 @@ check_optimum_habana_min_version("1.19.0.dev0")
 @dataclass
 class FineTuneArguments:
     model_name_or_path: Optional[str] = field(
-        default="/home/work/Qwen3-0.6B",
+        default="Qwen/Qwen3-0.6B",
         metadata={"help": "The name or path to the model file."},
     )
     dataset_path: Optional[str] = field(
